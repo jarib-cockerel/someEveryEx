@@ -37,13 +37,23 @@ Examples:
 */
 
 //write a function called hasAZerio
+// function hasAZero(num) {
+//   return num
+//     .toString()
+//     .split("")
+//     .some(function (val) {
+//       return val === 0;
+//     });
+// }
+
+//write a function called hasAZerio
 function hasAZero(num) {
-  return num
-    .toString()
-    .split("")
-    .some(function (val) {
-      return val === 0;
-    });
+  //return argument and object porotype.toString which is a method of object to resturn a string representing this object
+  //over by derived objects
+  //toString takes not parameters but may overide with own implmentation that do take parametes
+  //prototype is an object with a built-in property and makes a prototype chain
+  //prototype also inheart features from one another
+  // return num.toString()//return array object as a string
 }
 
 /*
