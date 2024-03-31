@@ -54,7 +54,13 @@ function hasAZero(num) {
   //prototype is an object with a built-in property and makes a prototype chain
   //prototype also inheart features from one another
   // return num.toString()//return array object as a string
-  // return num.toStriing().split("")
+  // return num.toStriing().split("") will return as a string and add spaces inbetween each value
+  return num
+    .toString()
+    .split("")
+    .some(function (val) {
+      return val === 0; // return value that equal 0 but if any does then return true as well
+    });
 }
 
 /*
