@@ -12,9 +12,18 @@ Examples:
 //   });
 // }
 
+// function hasOddNumber(arr) {
+//   return arr.some(function (val) {
+//     return val % 2 !== 0;
+//   });
+// }
+
+//write a function called has OddNumber which accepts an array
 function hasOddNumber(arr) {
+  //return true if array contains atleast one number if not then false
   return arr.some(function (val) {
-    return val % 2 !== 0;
+    //use strictly equal to check for array method of some verify at least one object is true
+    return val % 2 !== 0; //return argument to check if the remained of any object does not = 0, then return true
   });
 }
 
